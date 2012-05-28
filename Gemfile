@@ -24,7 +24,17 @@ group :development do
   gem 'pry'
 end
 
+group :test do
+  gem 'rspec'
+  gem 'shoulda-matchers'
+end
 
+gem 'heroku'
+gem 'acts_as_tree'
+gem 'rails_admin'
+gem 'devise'
+gem 'cancan'
+gem 'haml'
 gem 'jquery-rails'
 
 # To use ActiveModel has_secure_password
