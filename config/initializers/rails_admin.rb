@@ -10,7 +10,7 @@ RailsAdmin.config do |config|
   config.current_user_method { current_user } # auto-generated
 
   # If you want to track changes on your models:
-  config.audit_with :history, User
+  # config.audit_with :history, User
   config.authorize_with :cancan
 
   # Or with a PaperTrail: (you need to install it first)
@@ -128,6 +128,7 @@ RailsAdmin.config do |config|
       configure :last_sign_in_ip, :string 
       configure :created_at, :datetime 
       configure :updated_at, :datetime   #   # Sections:
+      configure :role, :string   #   # Sections:
     list do; end
     export do; end
     show do; end
