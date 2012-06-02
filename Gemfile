@@ -46,7 +46,7 @@ gem 'cancan'
 gem 'haml'
 gem 'jquery-rails'
 gem 'exception_notification', :require => 'exception_notifier'
-gem 'eventmachine', '1.0.0.beta.4.1'
+# gem 'eventmachine', '1.0.0.beta.4.1'
 gem 'thin'
 
 
