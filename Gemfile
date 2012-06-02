@@ -22,10 +22,14 @@ end
 group :development do
   gem 'ruby-debug-pry'
   gem 'pry'
+  gem 'pry-nav'
   gem 'rspec-rails'
 end
 
 group :test do
+  gem 'spork', '> 0.9.0.pre'
+  gem 'guard-rails'
+  gem 'guard-spork'
   gem "capybara-webkit"
   gem 'rspec-rails'
   gem "capybara"
@@ -33,6 +37,8 @@ group :test do
 end
 
 gem 'heroku'
+gem 'win32console'
+gem 'delayed_job_active_record'
 gem 'acts_as_tree'
 gem 'rails_admin'
 gem 'devise'
@@ -40,6 +46,9 @@ gem 'cancan'
 gem 'haml'
 gem 'jquery-rails'
 gem 'exception_notification', :require => 'exception_notifier'
+gem 'eventmachine', '1.0.0.beta.4.1'
+gem 'thin'
+
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
