@@ -39,6 +39,7 @@ gem 'devise'
 gem 'cancan'
 gem 'haml'
 gem 'jquery-rails'
+gem 'exception_notification', :require => 'exception_notifier'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
