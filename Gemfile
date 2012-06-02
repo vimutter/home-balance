@@ -22,10 +22,13 @@ end
 group :development do
   gem 'ruby-debug-pry'
   gem 'pry'
+  gem 'rspec-rails'
 end
 
 group :test do
-  gem 'rspec'
+  gem "capybara-webkit"
+  gem 'rspec-rails'
+  gem "capybara"
   gem 'shoulda-matchers'
 end
 
