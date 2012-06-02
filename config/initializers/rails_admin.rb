@@ -35,7 +35,7 @@ RailsAdmin.config do |config|
   # config.excluded_models = [Category, Order, User]
 
   # Add models here if you want to go 'whitelist mode':
-  config.included_models = [Category, Order, User]
+  # config.included_models = [Category, Order, User]
 
   # Application wide tried label methods for models' instances
   # config.label_methods << :description # Default is [:name, :title]
@@ -80,60 +80,60 @@ RailsAdmin.config do |config|
 
   # All fields marked as 'hidden' won't be shown anywhere in the rails_admin unless you mark them as visible. (visible(true))
 
-  config.model Category do
-    # Found associations:
-    # Found columns:
-      configure :id, :integer 
-      configure :name, :string 
-      configure :parent_id, :integer 
-      configure :created_at, :datetime 
-      configure :updated_at, :datetime   #   # Sections:
-    list do; end
-    export do; end
-    show do; end
-    edit do; end
-    create do; end
-    update do; end
-  end
-  config.model Order do
-    # Found associations:
-    # Found columns:
-      configure :id, :integer 
-      configure :total, :decimal 
-      configure :date, :datetime 
-      configure :category_id, :integer 
-      configure :created_at, :datetime 
-      configure :updated_at, :datetime   #   # Sections:
-    list do; end
-    export do; end
-    show do; end
-    edit do; end
-    create do; end
-    update do; end
-  end
-  config.model User do
-    # Found associations:
-    # Found columns:
-      configure :id, :integer 
-      configure :email, :string 
-      configure :password, :password         # Hidden 
-      configure :password_confirmation, :password         # Hidden 
-      configure :reset_password_token, :string         # Hidden 
-      configure :reset_password_sent_at, :datetime 
-      configure :remember_created_at, :datetime 
-      configure :sign_in_count, :integer 
-      configure :current_sign_in_at, :datetime 
-      configure :last_sign_in_at, :datetime 
-      configure :current_sign_in_ip, :string 
-      configure :last_sign_in_ip, :string 
-      configure :created_at, :datetime 
-      configure :updated_at, :datetime   #   # Sections:
-      configure :role, :string   #   # Sections:
-    list do; end
-    export do; end
-    show do; end
-    edit do; end
-    create do; end
-    update do; end
-  end
+  # config.model Category do
+  #   # Found associations:
+  #   # Found columns:
+  #     configure :id, :integer 
+  #     configure :name, :string 
+  #     configure :parent_id, :integer 
+  #     configure :created_at, :datetime 
+  #     configure :updated_at, :datetime   #   # Sections:
+  #   list do; end
+  #   export do; end
+  #   show do; end
+  #   edit do; end
+  #   create do; end
+  #   update do; end
+  # end
+  # config.model Order do
+  #   # Found associations:
+  #   # Found columns:
+  #     configure :id, :integer 
+  #     configure :total, :decimal 
+  #     configure :date, :datetime 
+  #     configure :category_id, :integer 
+  #     configure :created_at, :datetime 
+  #     configure :updated_at, :datetime   #   # Sections:
+  #   list do; end
+  #   export do; end
+  #   show do; end
+  #   edit do; end
+  #   create do; end
+  #   update do; end
+  # end
+  # config.model User do
+  #   # Found associations:
+  #   # Found columns:
+  #     configure :id, :integer 
+  #     configure :email, :string 
+  #     configure :password, :password         # Hidden 
+  #     configure :password_confirmation, :password         # Hidden 
+  #     configure :reset_password_token, :string         # Hidden 
+  #     configure :reset_password_sent_at, :datetime 
+  #     configure :remember_created_at, :datetime 
+  #     configure :sign_in_count, :integer 
+  #     configure :current_sign_in_at, :datetime 
+  #     configure :last_sign_in_at, :datetime 
+  #     configure :current_sign_in_ip, :string 
+  #     configure :last_sign_in_ip, :string 
+  #     configure :created_at, :datetime 
+  #     configure :updated_at, :datetime   #   # Sections:
+  #     configure :role, :string   #   # Sections:
+  #   list do; end
+  #   export do; end
+  #   show do; end
+  #   edit do; end
+  #   create do; end
+  #   update do; end
+  # end
 end
