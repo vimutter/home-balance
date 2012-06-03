@@ -254,6 +254,7 @@ DEPENDENCIES
   coffee-rails (~> 3.2.1)
   delayed_job_active_record
   devise
+  eventmachine (= 1.0.0.beta.4.1)
   exception_notification
   guard-rails
   guard-spork

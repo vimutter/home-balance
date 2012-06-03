@@ -37,7 +37,7 @@ group :test do
 end
 
 gem 'heroku'
- gem 'delayed_job_active_record'
+gem 'delayed_job_active_record'
 gem 'acts_as_tree'
 gem 'rails_admin'
 gem 'devise'
@@ -45,7 +45,7 @@ gem 'cancan'
 gem 'haml'
 gem 'jquery-rails'
 gem 'exception_notification', :require => 'exception_notifier'
-# gem 'eventmachine', '1.0.0.beta.4.1'
+gem 'eventmachine', '1.0.0.beta.4.1', :platforms => [:mswin, :mingw]
 gem 'thin'
 
 
