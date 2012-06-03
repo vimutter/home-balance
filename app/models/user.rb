@@ -11,8 +11,15 @@ class User < ActiveRecord::Base
 
   validates_inclusion_of :role, :in => Role::ALL
 
+  before_validate :set_default_role
+
   def admin?
   	role == 'admin'
+  end
+
+  protected
+  def set_default_role
+    self.role = 'ordinary'
   end
 
 end
